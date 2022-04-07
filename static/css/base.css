@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url('') no-repeat center center fixed;
+    background: url('/media/images/background/lloyd.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -29,13 +29,14 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: rgb(138, 138, 138);
     color: white;
     min-width: 260px;
+    border: 1px solid #555;
 }
 
 .btn-black {
-    background: black;
+    background: rgb(138, 138, 138);
     color: white;
 }
 
@@ -45,12 +46,12 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: rgb(243, 240, 240);
+    color: rgb(13, 13, 13);
 }
 
 .text-black {
-    color: #000 !important;
+    color: rgb(244, 243, 243) !important;
 }
 
 .border-black {
