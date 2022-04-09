@@ -1,12 +1,53 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![CI logo](/media/images/My%20logo/BFT.jpeg)
 
-Welcome Spotarachy,
+Welcome Body Fanatics
+**,June 20 2022**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Introduction
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+This website was made as the name's suggests for real fanatics when it comes to physical fitness, endurance, and over-all passion for Health, we listen to the advice & opinions of the fitness industry & we believe that we have created a strong Community to have everything you need in one place, come on jones.
 
-## Gitpod Reminders
+## Table of Content
+
+1.[UX - User Experience](#ux) 
+
+  * [Project Goals](#project-goals)
+
+  * [User Stories](#user-stories)
+
+2.[Design](#design)
+
+  * [colour](#colour)
+
+  * [Typography](#typography)
+
+  * [Images](#images)
+
+  * [Icons](#icons)
+
+  * [Layout](#layout)
+
+  * [Wireframes](#wireframes)
+
+3.[Features](#features)
+
+  * [Validator](#validator)
+
+  * [Testing](#Testing)
+  
+  * [Bugs](#Bugs)
+
+4.[Developmnet](#Developmnet)
+
+    * GithubPage
+
+    * Horoku
+
+    * Mongo DB
+
+   * [Credit](#Credit)
+   * [Acknowledgements](#Acknowledgement)
+
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
