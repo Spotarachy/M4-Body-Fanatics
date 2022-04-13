@@ -1,4 +1,4 @@
-![CI logo](/media/images/My%20logo/BFT.jpeg)
+![CI logo](/media/images/My%20logo/IMG_8940.jpg)
 
 Welcome Body Fanatics
 **,June 20 2022**
@@ -21,23 +21,32 @@ This website was made as the name's suggests for real fanatics when it comes to 
   * [User Stories](#user-stories)
     * [Database schema](#database-schema)
     * [Functionality](#functionality)
-a.[Create](#create)
+        
+        .[Create](#create)
+        .[Read](#read)
+        .[Update](#update)
+        .[Delete](#delete)
 
 
 2.[Design](#design)
 
   * [colour](#colour)
-    * [CRUD](#crud)
-
+    
   * [Typography](#typography)
 
   * [Images](#images)
+    * [Pexels.com](#Pexels)
+    * [AliExpress.com](#aliExpress)
+    * [Storenvy.com](#storenvy.com)
+    * [VectorStock.com](#font-awesome)
 
   * [Icons](#icons)
+    * [Font Awesome ](#font-awesome)
+    * [Bootstrap](#bootstrap)
 
   * [Layout](#layout)
 
-  * [Wireframes](#wireframes)
+  * [Wire frames](#wire-frames)
 
 3.[Features](#features)
 

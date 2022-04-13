@@ -1,14 +1,13 @@
 from django.db import models
-from .models import Product, Category
 
 
 class Category(models.Model):
-    name = models.CharFrield(max_length=254)
-    friendly_name = models.Charfield(max_length=245, null=True, blank=True)
+    name = models.CharField(max_length=254)
+    friendly_name = models.CharField(max_length=245, null=True, blank=True)
 
     def __str__(self):
         return self.name
-    
+
     def get_deferred_fields(self):
         return self.friendly_name
 
