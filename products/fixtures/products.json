@@ -1,12 +1,15 @@
+//all the gym apparle will go in the product list fist,
 [{
     "pk":1,
-    "model":"products.product",
+    "model":"products.product" "products.categories",
     "fields":{
+        "sku":"",
         "name": "activewear",
-        "description": "",
+        "description": "Top & leggings Set",
         "price": 53.99,
-        "category": 6,
-        "image": "a.jpeg",
+        "category": 1,
+        "image": "a.jpeg","b.jpeg"
+        "colour": "Lime Green",
         "client": "",
         "tools": "",
         "is_sold": true,
@@ -17,55 +20,61 @@
     "pk":2,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "activewear",
+        "description": "Top & leggings Set",
+        "price": 43.99,
+        "category": 1,
+        "image front": "c.jpeg",
+        "image back":"d.jpeg",
+        "colour": "Peach",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "apparel"
     }
 },
 {
     "pk":3,
     "model":"products.product",
     "fields":{
-        "name": "",
+        "name": "activewear",
         "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "price": 43.99,
+        "category": 1,
+        "image front": "e.jpeg",
+        "image back":"f.jpeg",
+        "colour": "Hot Pink",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "apparel"
     }
 },
 {
     "pk":4,
     "model":"products.product",
     "fields":{
-        "name": "",
+        "name": "activewear",
         "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "price": 43.99,
+        "category": 1,
+        "image front": "g.jpeg",
+        "image back":"h.jpeg",
+        "colour": "Violet",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "apparel"
     }
 },
 {
     "pk":5,
     "model":"products.product",
     "fields":{
-        "name": "",
+        "name": "activewear",
         "description": "",
         "price": 53.99,
-        "category": 6,
+        "category": 1,
         "image": "",
         "client": "",
         "tools": "",
