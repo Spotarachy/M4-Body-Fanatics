@@ -84,8 +84,7 @@
         "is_sold": true,
         "sale_type": "Apparel"
     }
-}
-,
+},
 {
     "pk":6,
     "model":"products.product",
@@ -103,73 +102,79 @@
         "sale_type": "New Arrivals"
     }
 },
+//deals set apparel 
 {
     "pk":7,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "new_arrivals",
+        "description": "2x Sports Bra, Seamless Shorts + Leggings bundle",
+        "price": 89.99,
+        "category": 3,
+        "image front": "t.jpeg",
+        "image back" :"z.jpeg",
+        "colour": "AQUA",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "New Arrivals"
     }
 },
 {
     "pk":8,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
+        "name": "deals",
+        "description":  "2x Sports Bra, Seamless Shorts + Leggings bundle",
         "price": 53.99,
-        "category": 6,
-        "image": "",
+        "category": 3,
+        "image front": "x.jpeg",
+        "colour": "salmon",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "deals"
     }
 },
 {
     "pk":9,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
+        "name": "deals",
+        "description": "2x Sports Bra, Seamless Shorts + Leggings bundle",
+        "price": 43.99,
         "category": 6,
-        "image": "",
+        "image front": "s.jpeg",
+        "colour": "maroon",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "deals"
     }
 },
 {
     "pk":10,
-    "model":"products.product",
+    "model":"clearance",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "clearance",
+        "description": "2x Sports Bra, Seamless Shorts + Leggings bundle",
+        "price": 30.00,
+        "category": 2,
+        "image front": "w.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "clearance"
     }
 },
+//giff card
 {
     "pk":11,
     "model":"products.product",
     "fields":{
         "name": "",
         "description": "",
-        "price": 53.99,
+        "price": 19.99,
         "category": 6,
         "image": "",
         "client": "",
