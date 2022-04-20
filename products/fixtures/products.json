@@ -363,7 +363,7 @@
     "pk":24,
     "model":"products.product",
     "fields":{
-        "name": "Pikx (Coach)",
+        "name": "Pikx (Personal Trainer)",
         "description": "Hey am Pikx, if you're looking to build a strong core with Cross Fit & a good team you're in the right place, here we focus on reps everyone count if you wanna push yourself to achieve your goals you know what to do next, my workout plan prices are 199.99 per Month!",
         "price": 199.99,
         "category": 9,
@@ -379,11 +379,11 @@
     "pk":25,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
+        "name": "Li (Coach)",
+        "description": "Hey am Li, looking to get in the best shape year-round follow my step closely with your meals and your workout routine & I will get you there in no time at all time, we as a group are fun and focus so let's do it together, my workout plan prices are 180.00 per Month!",
+        "price": 180.00,
         "category": 9,
-        "image": "",
+        "image": "li-fitness.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
@@ -396,7 +396,7 @@
     "pk":26,
     "model":"products.product",
     "fields":{
-        "name": "",
+        "name": "Oscar (Personal Trainer)",
         "description": "",
         "price": 53.99,
         "category": 9,
@@ -413,7 +413,7 @@
     "pk":27,
     "model":"products.product",
     "fields":{
-        "name": "",
+        "name": "Hong (Coach)",
         "description": "",
         "price": 53.99,
         "category": 6,
