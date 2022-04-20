@@ -15,6 +15,8 @@
 
     {"pk":8,"model": "products.category", "fields": {"name": "meals", "friendly_name": "Meals Plan"}},
 
-    {"pk":9,"model": "products.category", "fields": {"name": "trainers", "friendly_name": "Trainers"}}
+    {"pk":9,"model": "products.category", "fields": {"name": "trainers", "friendly_name": "Trainers"}},
+
+    {"pk":10,"model": "products.category", "fields": {"name": "card", "friendly_name": "Cards"}}
  
 ]

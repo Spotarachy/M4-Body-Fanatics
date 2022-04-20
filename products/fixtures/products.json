@@ -4,7 +4,7 @@
     "model":"products.product",
     "fields":{
         "sku":"",
-        "name": "activewear",
+        "name": "Seamless Spring Collection",
         "description": "Sports Bra & Seamless Shorts Set",
         "price": 53.99,
         "category": 1,
@@ -14,14 +14,15 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "activewear"
+        "sale_type": "activewear",
+        "friendly_name":"Activewear"
     }
 },
 {
     "pk":2,
     "model":"products.product",
     "fields":{
-        "name": "new_arrivals",
+        "name": "Seamless Summer Collection",
         "description": "Sports Bra & Seamless Shorts Set",
         "price": 43.99,
         "category": 1,
@@ -31,14 +32,15 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "New Arrivals"
+        "sale_type": "new_arrivals",
+        "friendly_name":"New Arrivals"
     }
 },
 {
     "pk":3,
     "model":"products.product",
     "fields":{
-        "name": "activewear",
+        "name": "Seamless Spring Collection",
         "description": "Sports Bra & Seamless Shorts Set",
         "price": 43.99,
         "category": 1,
@@ -48,14 +50,15 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "Apparel"
+        "sale_type": "Apparel",
+        "friendly_name":"Activewear"
     }
 },
 {
     "pk":4,
     "model":"products.product",
     "fields":{
-        "name": "activewear",
+        "name": "Seamless Spring Collection",
         "description": "Sports Bra & Seamless Shorts Set",
         "price": 43.99,
         "category": 1,
@@ -65,14 +68,15 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "Apparel"
+        "sale_type": "Apparel",
+        "friendly_name":"Activewear"
     }
 },
 {
     "pk":5,
     "model":"products.product",
     "fields":{
-        "name": "activewear",
+        "name": "Seamless Spring Collection",
         "description": "Sports Bra & Seamless Shorts Set",
         "price": 53.99,
         "category": 1,
@@ -82,14 +86,15 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "Apparel"
+        "sale_type": "Apparel",
+        "friendly_name":"Activewear"
     }
 },
 {
     "pk":6,
     "model":"products.product",
     "fields":{
-        "name": "new_arrivals",
+        "name": "Seamless Summer Collection",
         "description": "Sports Bra & Seamless Shorts Set",
         "price": 59.99,
         "category": 1,
@@ -99,7 +104,8 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "New Arrivals"
+        "sale_type": "new_arrivals",
+        "friendly_name":"New Arrivals"
     }
 },
 //deals set apparel 
@@ -107,7 +113,7 @@
     "pk":7,
     "model":"products.product",
     "fields":{
-        "name": "new_arrivals",
+        "name": "Seamless Summer Collection",
         "description": "2x Sports Bra, Seamless Shorts + Leggings bundle",
         "price": 89.99,
         "category": 3,
@@ -117,15 +123,16 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "New Arrivals"
+        "sale_type": "new_arrivals",
+        "friendly_name":"New Arrivals"
     }
 },
 {
     "pk":8,
     "model":"products.product",
     "fields":{
-        "name": "deals",
-        "description":  "2x Sports Bra, Seamless Shorts + Leggings bundle",
+        "name": "Active fall Collection",
+        "description": "2x Sports Bra, And our Active Fall Shorts + Leggings bundle",
         "price": 53.99,
         "category": 3,
         "image front": "x.jpeg",
@@ -133,15 +140,16 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "deals"
+        "sale_type": "deals",
+        "friendly_name":"Deals"
     }
 },
 {
     "pk":9,
     "model":"products.product",
     "fields":{
-        "name": "deals",
-        "description": "2x Sports Bra, Seamless Shorts + Leggings bundle",
+        "name": "Active fall Collection",
+        "description": "2x Sports Bra, And our Active Fall Shorts + Leggings bundle",
         "price": 43.99,
         "category": 6,
         "image front": "s.jpeg",
@@ -149,7 +157,9 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "deals"
+        "sale_type": "deals",
+        "friendly_name":"Deals"
+
     }
 },
 {
@@ -164,7 +174,8 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "clearance"
+        "sale_type": "clearance",
+        "friendly_name":"Clearance"
     }
 },
 //giff card
@@ -172,15 +183,16 @@
     "pk":11,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
+        "name": "card",
+        "description": "gift card of $19.99, tryout are new Meal Plans",
         "price": 19.99,
-        "category": 6,
-        "image": "",
+        "category": 10,
+        "image": "1.jpeg",
         "client": "",
-        "tools": "",
+        "tools": "gift card",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "card",
+        "friendly_name":"Gift Card"
     }
 }
 ,
@@ -188,94 +200,217 @@
     "pk":12,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "card",
+        "description": "gift card of $29.99 to shop the new looks",
+        "price": 29.99,
+        "category": 10,
+        "image": "1.jpeg",
         "client": "",
-        "tools": "",
+        "tools": "gift card",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "card",
+        "friendly_name":"Gift Card"
     }
 },
 {
     "pk":15,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "card",
+        "description": "gift card of $ 49.00 to shop the new Deals",
+        "price": 49.99,
+        "category": 10,
+        "image": "1.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "card",
+        "friendly_name":"Gift Card"
     }
 },
+//meals
 {
     "pk":16,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "5min Meal Preps",
+        "description": "Made from, Brown rice, sweetcorn, cucumbers, black olives, chickpeas, tomatoes & chives",
+        "price": 5.99,
+        "category": 8,
+        "image": "ella2.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "meals",
+        "friendly_name":"Meals Plan"
     }
 },
 {
     "pk":17,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "5min Meal Preps",
+        "description": "Made from quinoa, Mix veggies, Basil, mushrooms, tomatoes & chives",
+        "price": 5.99,
+        "category":8,
+        "image": "ella3.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "meals",
+        "friendly_name":"Meals Plan"
     }
 },
 {
     "pk":18,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
+        "name": "3Min Meals",
+        "description": "Made from couscous, broccoli, tomatoes, lime, basil, Brussels sprouts, carrots, red peppers, cucumbers, and ginger",
+        "price": 9.99,
         "category": 6,
-        "image": "",
+        "image": "ella4.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "new_arrivals",
+        "friendly_name":"New Arrivals"
     }
 },
 {
     "pk":19,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "5Min Meal Preps",
+        "description": "Made from Rice, broccoli meal ball, tomatoes, lime, carrots, red peppers, potatoes, Kale,chickpeas",
+        "price": 5.99,
+        "category": 8,
+        "image": "ella8.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "meals",
+        "friendly_name":"Meals Plan"
     }
 },
 {
     "pk":20,
+    "model":"products.product",
+    "fields":{
+        "name": "3Min Snack's",
+        "description": "Lemon custard with raspberry (sweet)",
+        "price": 2.99,
+        "category": 8,
+        "image": "ella5.jpeg",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "meals",
+        "friendly_name":"Meals Plan"
+    }
+},
+{
+    "pk":21,
+    "model":"products.product",
+    "fields":{
+        "name": "3Min Snack's",
+        "description": "Deep-fried Tempeh Satay with a key-lime chutney dip(savoury)",
+        "price": 2.99,
+        "category": 8,
+        "image": "ella6.jpeg",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "meals",
+        "friendly_name":"Meals Plan"
+    }
+},
+{
+    "pk":22,
+    "model":"products.product",
+    "fields":{
+        "name": "3Min Snack's",
+        "description": "mini tarts with blueberries and oats",
+        "price": 3.99,
+        "category": 8,
+        "image": "ella7.jpeg",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "meals",
+        "friendly_name":"Meals Plan"
+    }
+},
+//Trainers
+{
+    "pk":23,
+    "model":"products.product",
+    "fields":{
+        "name": "Valeria (Coach)",
+        "description": "Hey am Valeria, come join my team here we are fully Focus on improving your wellness and mind set, using deep mediation to unlock your power, my work out plan prices are 143.99 Per Month!",
+        "price": 143.99,
+        "category": 9,
+        "image": "valeria-wellness.jpeg",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "trainers",
+        "friendly_name":"Trainers"
+
+    }
+},
+{
+    "pk":24,
+    "model":"products.product",
+    "fields":{
+        "name": "Pikx (Coach)",
+        "description": "Hey am Pikx, if you're looking to build a strong core with Cross Fit & a good team you're in the right place, here we focus on reps everyone count if you wanna push yourself to achieve your goals you know what to do next, my workout plan prices are 199.99 per Month!",
+        "price": 199.99,
+        "category": 9,
+        "image": "pikx-crossFit.jpeg",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "trainers",
+        "friendly_name":"Trainers"
+    }
+},
+{
+    "pk":25,
+    "model":"products.product",
+    "fields":{
+        "name": "",
+        "description": "",
+        "price": 53.99,
+        "category": 9,
+        "image": "",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "trainers",
+        "friendly_name":"Trainers"
+
+    }
+},
+{
+    "pk":26,
+    "model":"products.product",
+    "fields":{
+        "name": "",
+        "description": "",
+        "price": 53.99,
+        "category": 9,
+        "image": "",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "trainers",
+        "friendly_name":"Trainers"
+
+    }
+},
+{
+    "pk":27,
     "model":"products.product",
     "fields":{
         "name": "",
@@ -286,7 +421,60 @@
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card"
+        "sale_type": "card",
+        "friendly_name":"Meals Plan"
+
+    }
+},
+{
+    "pk":28,
+    "model":"products.product",
+    "fields":{
+        "name": "",
+        "description": "",
+        "price": 53.99,
+        "category": 6,
+        "image": "",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "card",
+        "friendly_name":"Meals Plan"
+
+    }
+},
+{
+    "pk":29,
+    "model":"products.product",
+    "fields":{
+        "name": "",
+        "description": "",
+        "price": 53.99,
+        "category": 6,
+        "image": "",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "card",
+        "friendly_name":"Meals Plan"
+
+    }
+},
+{
+    "pk":30,
+    "model":"products.product",
+    "fields":{
+        "name": "",
+        "description": "",
+        "price": 53.99,
+        "category": 6,
+        "image": "",
+        "client": "",
+        "tools": "",
+        "is_sold": true,
+        "sale_type": "card",
+        "friendly_name":"Meals Plan"
+
     }
 }
 ]
