@@ -1,4 +1,3 @@
-//all the gym apparle will go in the product list fist,
 [{
     "pk":1,
     "model":"products.product",
@@ -96,7 +95,6 @@
         "friendly_name":"New Arrivals"
     }
 },
-//deals set apparel 
 {
     "pk":7,
     "model":"products.product",
@@ -117,7 +115,7 @@
     "pk":8,
     "model":"products.product",
     "fields":{
-        "name": "Active fall Collection",
+        "name": "Active Fall Collection",
         "description": "2x Sports Bra, And our Active Fall Shorts + Leggings bundle",
         "price": 53.99,
         "category": 3,
@@ -132,7 +130,7 @@
     "pk":9,
     "model":"products.product",
     "fields":{
-        "name": "Active fall Collection",
+        "name": "Active Fall Collection",
         "description": "2x Sports Bra, And our Active Fall Shorts + Leggings bundle",
         "price": 43.99,
         "category": 6,
@@ -148,7 +146,7 @@
     "pk":10,
     "model":"clearance",
     "fields":{
-        "name": "clearance",
+        "name": "Active Fall Collection",
         "description": "2x Sports Bra, Seamless Shorts + Leggings bundle",
         "price": 30.00,
         "category": 2,
@@ -158,7 +156,6 @@
         "friendly_name":"Clearance"
     }
 },
-//giff card
 {
     "pk":11,
     "model":"products.product",
@@ -201,7 +198,6 @@
         "friendly_name":"Gift Card"
     }
 },
-//meals
 {
     "pk":16,
     "model":"products.product",
@@ -300,7 +296,6 @@
         "friendly_name":"Meals Plan"
     }
 },
-//Trainers
 {
     "pk":23,
     "model":"products.product",
@@ -313,7 +308,6 @@
         "is_sold": true,
         "sale_type": "trainers",
         "friendly_name":"Trainers"
-
     }
 },
 {
@@ -342,7 +336,6 @@
         "is_sold": true,
         "sale_type": "trainers",
         "friendly_name":"Trainers"
-
     }
 },
 {
@@ -357,7 +350,6 @@
         "is_sold": true,
         "sale_type": "trainers",
         "friendly_name":"Trainers"
-
     }
 },
 {
@@ -400,7 +392,6 @@
         "is_sold": true,
         "sale_type": "workout",
         "friendly_name":"Work Out Plan"
-
     }
 },
 {
@@ -409,47 +400,204 @@
     "fields":{
         "name": "Dips",
         "description": "hey guys this is a compound moment, this isolate your chest, shoulders, triceps, but you do need to Dip Bars to be able to pull out this movement follow the guide closely and enjoy",
-        "price": 19.99,
+        "price": 12.99,
         "category": 5,
         "image": "c.png",
         "is_sold": true,
         "sale_type": "workout",
         "friendly_name":"Work Out Plan"
-
     }
 },
-//groupLessons
 {
     "pk":31,
     "model":"products.product",
     "fields":{
-        "name": "NEW Group lessons (YoGa)",
+        "name": "Dead Lifts",
+        "description": "this isn't very easy progressive overload workout using a barbell in combination of compound movements, this will target your glutes, hamstrings, lats, middle back, quadriceps, and your traps, fully engage the motion and enjoy",
+        "price": 11.99,
+        "category": 5,
+        "image": "d.png",
+        "is_sold": true,
+        "sale_type": "workout",
+        "friendly_name":"Work Out Plan"
+    }
+},
+{
+    "pk":32,
+    "model":"products.product",
+    "fields":{
+        "name": "Wide Grip Lat Pulldown",
+        "description": "looking for more advanced compound lift try this lat pull, with the machine to fully engage with your back and shoulders, enjoy",
+        "price": 13.99,
+        "category": 5,
+        "image": "e.png",
+        "is_sold": true,
+        "sale_type": "workout",
+        "friendly_name":"Work Out Plan"
+    }
+},
+{
+    "pk":33,
+    "model":"products.product",
+    "fields":{
+        "name": "NEW Group Lessons (YoGa)",
         "description": "New group lessons are now available Body Fanatics, come join the team, for only $9.99 per lessons",
         "price": 9.99,
         "category": 5,
         "image": "andrea-group.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "new_arrivals",
         "friendly_name":"New Arrivals"
-
     }
 },
 {
-    "pk":30,
+    "pk":34,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 23.99,
-        "category": 5,
-        "image": "c.png",
-        "client": "",
-        "tools": "",
+        "name": "10 LB Resistant Bands",
+        "description": "Band X-Light at 600 * 50 * 0.35mm of Resistant",
+        "price": 11.99,
+        "category": 6,
+        "image": "1.jpg",
+        "colour": "AQUA" ,
         "is_sold": true,
-        "sale_type": "workout",
-        "friendly_name":"Work Out Plan"
-
+        "sale_type": "new_arrivals",
+        "friendly_name":"New Arrivals"
     }
+},
+{
+    "pk":35,
+    "model":"products.product",
+    "fields":{
+        "name": "15 LB Resistant Bands",
+        "description": "Band Light at 600 * 50 * 0.5mm of Resistant",
+        "price": 7.99,
+        "category": 4,
+        "image": "2.jpg",
+        "colour": "marine",
+        "is_sold": true,
+        "sale_type": "equipment",
+        "friendly_name":"Equipment"
+    }
+},
+{
+    "pk":36,
+    "model":"products.product",
+    "fields":{
+        "name": "20 LB Resistant Bands",
+        "description": "Band Medium at 600 * 50 * 0.7mm of Resistant",
+        "price": 7.99,
+        "category": 4,
+        "image": "3.jpg",
+        "colour": "Blue",
+        "is_sold": true,
+        "sale_type": "equipment",
+        "friendly_name":"Equipment"
+    }
+},
+{
+    "pk":37,
+    "model":"products.product",
+    "fields":{
+        "name": "30 LB Resistant Bands",
+        "description": "Band Heavy at 600 * 50 * 0.9mm of Resistant",
+        "price": 9.99,
+        "category": 4,
+        "image": "4.jpg",
+        "colour": "Violet",
+        "is_sold": true,
+        "sale_type": "equipment",
+        "friendly_name":"Equipment"
+    }
+},
+{
+    "pk":38,
+    "model":"products.product",
+    "fields":{
+        "name": "40 LB Resistant Bands",
+        "description": "Band X-Heavy at 600 * 50 * 1.1mm of Resistant",
+        "price": 9.99,
+        "category": 2,
+        "image": "5.jpg",
+        "colour": "Midnight blue",
+        "is_sold": true,
+        "sale_type": "clearance",
+        "friendly_name":"Clearance"
+    }
+},
+{
+    "pk":39,
+    "model":"products.product",
+    "fields":{
+        "name": "10 LB Resistant Bands",
+        "description": "Band X-Light at 600 * 50 * 0.35mm of Resistant",
+        "price": 11.99,
+        "category": 6,
+        "image": "a.jpeg",
+        "colour": "Peach",
+        "is_sold": true,
+        "sale_type": "new_arrivals",
+        "friendly_name":"New Arrivals"
+    }
+},
+{
+    "pk":40,
+    "model":"products.product",
+    "fields":{
+        "name": "15 LB Resistant Bands",
+        "description": "Band Light at 600 * 50 * 0.5mm of Resistant",
+        "price": 11.99,
+        "category": 4,
+        "image": "b.jpeg",
+        "colour":"Hot Pink",
+        "is_sold": true,
+        "sale_type": "equipment",
+        "friendly_name":"Equipment"
+    }
+},
+{
+    "pk":41,
+    "model":"products.product",
+    "fields":{
+        "name": "20 LB Resistant Bands",
+        "description": "Band Medium at 600 * 50 * 0.7mm of Resistant",
+        "price": 9.99,
+        "category": 4,
+        "image": "c.jpg",
+        "colour":"salmon",
+        "is_sold": true,
+        "sale_type": "equipment",
+        "friendly_name":"Equipment"
+    }
+},
+{
+    "pk":42,
+    "model":"products.product",
+    "fields":{
+        "name": "30 LB Resistant Bands",
+        "description": "Band Heavy at 600 * 50 * 0.9mm of Resistant",
+        "price": 12.99,
+        "category": 4,
+        "image": "d.jpg",
+        "colour":"maroon",
+        "is_sold": true,
+        "sale_type": "equipment",
+        "friendly_name":"Equipment"
+    }
+},
+{
+    "pk":43,
+    "model":"products.product",
+    "fields":{
+        "name": "40 LB Resistant Bands",
+        "description": "Band X-Heavy at 600 * 50 * 1.1mm of Resistant",
+        "price": 12.99,
+        "category": 4,
+        "image": "e.jpg",
+        "colour":"charcoal",
+        "is_sold": true,
+        "sale_type": "equipment",
+        "friendly_name":"Equipment"
+    }
+}
 ]
