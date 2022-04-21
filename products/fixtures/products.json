@@ -11,8 +11,6 @@
         "image front": "a.jpeg",
         "image back": "b.jpeg",
         "colour": "Lime Green",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "activewear",
         "friendly_name":"Activewear"
@@ -29,8 +27,6 @@
         "image front": "c.jpeg",
         "image back": "d.jpeg",
         "colour": "Peach",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "new_arrivals",
         "friendly_name":"New Arrivals"
@@ -47,8 +43,6 @@
         "image front": "e.jpeg",
         "image back": "f.jpeg",
         "colour": "Hot Pink",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "Apparel",
         "friendly_name":"Activewear"
@@ -65,8 +59,6 @@
         "image front": "g.jpeg",
         "image back":"h.jpeg",
         "colour": "Violet",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "Apparel",
         "friendly_name":"Activewear"
@@ -83,8 +75,6 @@
         "image front": "i.jpeg",
         "image back": "k.jpeg",
         "colour": "Apex",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "Apparel",
         "friendly_name":"Activewear"
@@ -101,8 +91,6 @@
         "image front": "l.jpeg",
         "image back": "m.jpeg",
         "colour": "charcoal",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "new_arrivals",
         "friendly_name":"New Arrivals"
@@ -120,8 +108,6 @@
         "image front": "t.jpeg",
         "image back" :"z.jpeg",
         "colour": "AQUA",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "new_arrivals",
         "friendly_name":"New Arrivals"
@@ -137,8 +123,6 @@
         "category": 3,
         "image front": "x.jpeg",
         "colour": "salmon",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "deals",
         "friendly_name":"Deals"
@@ -154,8 +138,6 @@
         "category": 6,
         "image front": "s.jpeg",
         "colour": "maroon",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "deals",
         "friendly_name":"Deals"
@@ -171,8 +153,6 @@
         "price": 30.00,
         "category": 2,
         "image front": "w.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "clearance",
         "friendly_name":"Clearance"
@@ -188,14 +168,11 @@
         "price": 19.99,
         "category": 10,
         "image": "1.jpeg",
-        "client": "",
-        "tools": "gift card",
         "is_sold": true,
         "sale_type": "card",
         "friendly_name":"Gift Card"
     }
-}
-,
+},
 {
     "pk":12,
     "model":"products.product",
@@ -205,8 +182,6 @@
         "price": 29.99,
         "category": 10,
         "image": "1.jpeg",
-        "client": "",
-        "tools": "gift card",
         "is_sold": true,
         "sale_type": "card",
         "friendly_name":"Gift Card"
@@ -221,8 +196,6 @@
         "price": 49.99,
         "category": 10,
         "image": "1.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "card",
         "friendly_name":"Gift Card"
@@ -238,8 +211,6 @@
         "price": 5.99,
         "category": 8,
         "image": "ella2.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "meals",
         "friendly_name":"Meals Plan"
@@ -254,8 +225,6 @@
         "price": 5.99,
         "category":8,
         "image": "ella3.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "meals",
         "friendly_name":"Meals Plan"
@@ -270,8 +239,6 @@
         "price": 9.99,
         "category": 6,
         "image": "ella4.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "new_arrivals",
         "friendly_name":"New Arrivals"
@@ -286,8 +253,6 @@
         "price": 5.99,
         "category": 8,
         "image": "ella8.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "meals",
         "friendly_name":"Meals Plan"
@@ -302,8 +267,6 @@
         "price": 2.99,
         "category": 8,
         "image": "ella5.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "meals",
         "friendly_name":"Meals Plan"
@@ -318,8 +281,6 @@
         "price": 2.99,
         "category": 8,
         "image": "ella6.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "meals",
         "friendly_name":"Meals Plan"
@@ -334,8 +295,6 @@
         "price": 3.99,
         "category": 8,
         "image": "ella7.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "meals",
         "friendly_name":"Meals Plan"
@@ -346,13 +305,11 @@
     "pk":23,
     "model":"products.product",
     "fields":{
-        "name": "Valeria (Coach)",
+        "name": "Valeria (Coach) Wellness",
         "description": "Hey am Valeria, come join my team here we are fully Focus on improving your wellness and mind set, using deep mediation to unlock your power, my work out plan prices are 143.99 Per Month!",
         "price": 143.99,
         "category": 9,
         "image": "valeria-wellness.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "trainers",
         "friendly_name":"Trainers"
@@ -363,13 +320,11 @@
     "pk":24,
     "model":"products.product",
     "fields":{
-        "name": "Pikx (Personal Trainer)",
+        "name": "Pikx (Personal Trainer) Cross Fit",
         "description": "Hey am Pikx, if you're looking to build a strong core with Cross Fit & a good team you're in the right place, here we focus on reps everyone count if you wanna push yourself to achieve your goals you know what to do next, my workout plan prices are 199.99 per Month!",
         "price": 199.99,
         "category": 9,
         "image": "pikx-crossFit.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "trainers",
         "friendly_name":"Trainers"
@@ -379,13 +334,11 @@
     "pk":25,
     "model":"products.product",
     "fields":{
-        "name": "Li (Coach)",
+        "name": "Li (Coach) Fitness",
         "description": "Hey am Li, looking to get in the best shape year-round follow my step closely with your meals and your workout routine & I will get you there in no time at all time, we as a group are fun and focus so let's do it together, my workout plan prices are 180.00 per Month!",
         "price": 180.00,
         "category": 9,
         "image": "li-fitness.jpeg",
-        "client": "",
-        "tools": "",
         "is_sold": true,
         "sale_type": "trainers",
         "friendly_name":"Trainers"
@@ -396,13 +349,11 @@
     "pk":26,
     "model":"products.product",
     "fields":{
-        "name": "Oscar (Personal Trainer)",
-        "description": "",
-        "price": 53.99,
+        "name": "Oscar (Personal Trainer) Full Core",
+        "description": " Hello am Oscar, so yo're looking for a change in your life and getting the best shape of your life here we focus on core training with a little bit of plyometrics, my workout plan prices are 199.99 per Month!",
+        "price": 199.99,
         "category": 9,
-        "image": "",
-        "client": "",
-        "tools": "",
+        "image": "oscar-Core.jpeg",
         "is_sold": true,
         "sale_type": "trainers",
         "friendly_name":"Trainers"
@@ -413,50 +364,75 @@
     "pk":27,
     "model":"products.product",
     "fields":{
-        "name": "Hong (Coach)",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
-        "client": "",
-        "tools": "",
+        "name": "Hong (Coach) Martial Arts ",
+        "description": "Hello am Hong, martial arts has always been my go to training style if you want to learn to defend yourself better or to be more self-aware I highly recommend this course, come join a community and help build your confidence in yourself, my workout plan prices are 200.00 per Month!", 
+        "price": 200.00,
+        "category": 9,
+        "image": "hong-boxing.jpeg",
         "is_sold": true,
-        "sale_type": "card",
-        "friendly_name":"Meals Plan"
-
+        "sale_type": "trainers",
+        "friendly_name":"Trainers"
     }
 },
 {
     "pk":28,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
-        "client": "",
-        "tools": "",
+        "name": "Seated Tricep Press",
+        "description": "This is a slow methodical movement hitting your triceps shoulders with dumbbells pure isolation have fun",
+        "price": 14.99,
+        "category": 5,
+        "image": "a.png",
         "is_sold": true,
-        "sale_type": "card",
-        "friendly_name":"Meals Plan"
-
+        "sale_type": "workout",
+        "friendly_name":"Work Out Plan"
     }
 },
 {
     "pk":29,
     "model":"products.product",
     "fields":{
-        "name": "",
-        "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "name": "Dumbbell Lunges",
+        "description": "This is an easy in place exercise you can do at home, strengthening your glutes, hamstrings, & calves plus quadriceps using dumbbells for isolation enjoy the moment",
+        "price": 13.99,
+        "category": 5,
+        "image": "b.png",
+        "is_sold": true,
+        "sale_type": "workout",
+        "friendly_name":"Work Out Plan"
+
+    }
+},
+{
+    "pk":30,
+    "model":"products.product",
+    "fields":{
+        "name": "Dips",
+        "description": "hey guys this is a compound moment, this isolate your chest, shoulders, triceps, but you do need to Dip Bars to be able to pull out this movement follow the guide closely and enjoy",
+        "price": 19.99,
+        "category": 5,
+        "image": "c.png",
+        "is_sold": true,
+        "sale_type": "workout",
+        "friendly_name":"Work Out Plan"
+
+    }
+},
+//groupLessons
+{
+    "pk":31,
+    "model":"products.product",
+    "fields":{
+        "name": "NEW Group lessons (YoGa)",
+        "description": "New group lessons are now available Body Fanatics, come join the team, for only $9.99 per lessons",
+        "price": 9.99,
+        "category": 5,
+        "image": "andrea-group.jpeg",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card",
-        "friendly_name":"Meals Plan"
+        "sale_type": "new_arrivals",
+        "friendly_name":"New Arrivals"
 
     }
 },
@@ -466,15 +442,14 @@
     "fields":{
         "name": "",
         "description": "",
-        "price": 53.99,
-        "category": 6,
-        "image": "",
+        "price": 23.99,
+        "category": 5,
+        "image": "c.png",
         "client": "",
         "tools": "",
         "is_sold": true,
-        "sale_type": "card",
-        "friendly_name":"Meals Plan"
+        "sale_type": "workout",
+        "friendly_name":"Work Out Plan"
 
     }
-}
 ]
