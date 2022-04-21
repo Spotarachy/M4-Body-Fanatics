@@ -54,10 +54,9 @@ body {
     color: rgb(16, 16, 16) !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
-}
-
+/* .border-black {
+    border: 1px solid black !important; 
+} */
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
