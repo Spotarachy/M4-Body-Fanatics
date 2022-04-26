@@ -142,7 +142,7 @@
 },
 {
     "pk":10,
-    "model":"clearance",
+    "model":"products.product",
     "fields":{
         "name": "Active Fall Collection",
         "description": "2x Sports Bra, Seamless Shorts + Leggings bundle",
