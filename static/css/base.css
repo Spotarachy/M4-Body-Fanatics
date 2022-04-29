@@ -22,14 +22,16 @@ body {
 
 .logo-font {
     text-transform: uppercase;
+    color: #65707B;
 }
 
 .main-logo-link {
     width: fit-content;
+    color: #65707B;
 }
 /* CUSTOM AUTOMATION BUTTON */
 .shop-now-button {
-    background: rgb(138, 138, 138);
+    background: #65707B;
     color: white;
     min-width: 260px;
     padding: 10px 30px;
@@ -48,7 +50,7 @@ body {
 }
 
 .btn-black {
-    background: rgb(138, 138, 138);
+    background: #65707B;
     color: white;
 }
 
@@ -58,8 +60,8 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(243, 240, 240);
-    color: rgb(13, 13, 13);
+    background:  whitesmoke;
+    color: rgb(13, 13, 13); 
 }
 
 .text-black {
@@ -82,7 +84,7 @@ body {
 
 a.category-badge > span.badge:hover {
     background-color: rgb(243, 255, 240) !important;
-    color: red;
+    /* color: red; */
 }
 
 .btt-button {
@@ -125,7 +127,7 @@ a.category-badge > span.badge:hover {
 
 /* .border-black {
     border: 1px solid black !important; 
-} */
+}  */
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
