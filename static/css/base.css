@@ -27,12 +27,24 @@ body {
 .main-logo-link {
     width: fit-content;
 }
-
+/* CUSTOM AUTOMATION BUTTON */
 .shop-now-button {
     background: rgb(138, 138, 138);
     color: white;
     min-width: 260px;
-    border: 1px solid #555;
+    padding: 10px 30px;
+    border: 3px solid #304B43;
+    border-radius: 5px;
+}
+.shop-now-button:hover {
+    animation: pulsate 2s ease-in-out,
+}
+@keyframes pulsate {
+    0%{
+        box-shadow:
+        0 0 25px #fbe0da,
+        0 0 50px #C7CCD1;
+    }
 }
 
 .btn-black {
@@ -55,7 +67,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid #555 !important;
+    border: 1px solid black !important;
 }
 
 .overlay {
@@ -84,6 +96,33 @@ a.category-badge > span.badge:hover {
 .btt-link {
     cursor: pointer;
 }
+
+/* footer */
+
+.icon-wrapper {
+    display: inline-block;
+    font-size: medium 44px;
+    animation: float 5s ease-in-out infinite;
+}
+.ri-facebook-circle-line {
+    animation-duration: 1s;
+}
+.ri-whatsapp-line {
+    animation-duration: 2s;
+}
+
+@keyframes float {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
 /* .border-black {
     border: 1px solid black !important; 
 } */
