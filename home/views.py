@@ -3,6 +3,6 @@ from django.shortcuts import render
 # Create your views here.
 
 def index(request):
-    """The view for the index page"""
+    """thiswill show the view for the index, (Home) page"""
     
     return render(request, 'home/index.html')

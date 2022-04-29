@@ -16,7 +16,7 @@ class ProductAdmin(admin.ModelAdmin):
     )
     ordering = ('-sku',)
 
-#the order can be chang is using the name or not sku!
+#the order can be change by using the 'name' and not 'sku'!
 
 class CategoriesAdmin(admin.ModelAdmin):
     list_display = (
