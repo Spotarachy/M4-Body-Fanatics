@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url('/media/images/background/lloyd.jpeg') no-repeat center center fixed;
+    background: url('/media/background/lloyd.jpeg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -34,7 +34,6 @@ body {
     background: #65707B;
     color: white;
     min-width: 260px;
-    padding: 10px 30px;
     border: 3px solid #304B43;
     border-radius: 5px;
 }
