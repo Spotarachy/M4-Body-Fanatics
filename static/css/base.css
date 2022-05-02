@@ -43,8 +43,8 @@ body {
 @keyframes pulsate {
     0%{
         box-shadow:
-        0 0 25px #fbe0da,
-        0 0 50px #C7CCD1;
+        0 0 25px rgb(243, 255, 240)
+        0 0 50px #5ddcff;
     }
 }
 
@@ -82,8 +82,8 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background-color: rgb(243, 255, 240) !important;
-    /* color: red; */
+    background: rgb(243, 255, 240) !important;
+    color: #5ddcff !important;
 }
 
 .btt-button {
@@ -127,6 +127,7 @@ a.category-badge > span.badge:hover {
 /* .border-black {
     border: 1px solid black !important; 
 }  */
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
