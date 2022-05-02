@@ -57,10 +57,9 @@
                 All Product
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?category=by_rating" class="dropdown-itme">By Rating</a>
-                <a href="{% url 'products' %}?by_prices" class="dropdown-item">By Prices</a>
-                <!-- <a href="{% url 'products' %}?category=by_category" class="dropdown-item">By Category</a> -->
-                <a href="{% url 'products' %}?category=by_products" class="dropdown-item">By Products</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-itme">By Rating</a>
+                <a href="{% url 'products' %}??sort=price&direction=asc" class="dropdown-item">By Prices</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item">By Category</a>
             </div>
         </li>
     </ul>
