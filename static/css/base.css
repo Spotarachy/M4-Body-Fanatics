@@ -86,7 +86,7 @@ a.category-badge > span.badge:hover {
     color: #5ddcff !important;
 }
 
-.btt-button {
+/* .btt-button {
     height: 42px;
     width: 42px;
     position:fixed;
@@ -96,7 +96,7 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
-}
+} */
 
 /* footer */
 
