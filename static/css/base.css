@@ -52,6 +52,11 @@ body {
     background: #65707B;
     color: white;
 }
+.btn-outline-black {
+    background: white;
+    color: #65707B !important;
+    border: 1px solid black; 
+}
 
 .shop-now-button:hover,
 .shop-now-button:active,
