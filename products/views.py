@@ -8,7 +8,7 @@ from .models import Product, Category
 def all_products(request):
     """This view will show our products page & it will include both the search &sorting """
 
-    products = Product.objects.all()
+    products = Product.object.all()
     query = None
     categories = None
     sort = None
@@ -58,12 +58,12 @@ def all_products(request):
 
     return render(request, 'products/products.html', context)
 
-def products_detail(request):
+def products_detail(request, product_id):
     """This view will get specific product information """
-
-    products = get_objects_or_404(Products, pk=product_id)
+    print(request)
+    products = get_object_or_404(Product, pk=product_id)
 
     context = {
-        'product': product,
+        'product': products,
     }   
-    return render(request, 'products/products.html', context)
+    return render(request, 'products/products_detail.html', context)
