@@ -91,7 +91,7 @@ a.category-badge > span.badge:hover {
     color: #5ddcff !important;
 }
 
-/* .btt-button {
+.btt-button {
     height: 42px;
     width: 42px;
     position:fixed;
@@ -101,7 +101,7 @@ a.category-badge > span.badge:hover {
 
 .btt-link {
     cursor: pointer;
-} */
+} 
 
 /* footer */
 
@@ -129,11 +129,11 @@ a.category-badge > span.badge:hover {
     }
 }
 
-/* .border-black {
+.border-black {
     border: 1px solid black !important; 
-}  */
+}   *//*
 
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
