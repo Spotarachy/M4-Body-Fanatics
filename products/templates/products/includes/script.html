@@ -1,14 +1,14 @@
 <script type="text/javascript">
 // Disable +/-
     function handleEnableDisable(itemId){
-        var currentValue = parseInt($('#id_qty_${itemId}').val());
+        var currentValue = parseInt($(`#id_qty_${itemId}`).val());
         var minusDisabled = currentValue < 2;
         var plusDisabled = currentValue > 98;
-        $('#decrement-qty_${itemId}').prop('disabled', minusDisabled);
-        $('#increment-qty_${itemId}').prop('disabled', plusDisabled);
+        $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
+        $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
 // Enabling or disabling on all pages
-    var allQtyInput = $('.qty_input');
+    var allQtyInput = $(`.qty_input`);
     for(var i = 0; i < allQtyInputs.length; i++){
         var itemId = $(allQtyInput[i]).data('item_id');
         handleEnableDisable(itemId);
@@ -41,18 +41,18 @@
 
 <script type="text/javascript">
 //Update quantity
-$('.update-link').click(function(e){
-    var from = $(this).prev('.update-form');
+$('.update-link').click(function(e) {
+    var form = $(this).prev('.update-form');
     from.submit();
 })
 
 //Removes item and reload on click
-$('.remove-item').click(function(e){
+$('.remove-item').click(function(e) {
     var csrfToken = "{{ csrf_token }}";
     var itemId = $(this).attr('id').split('remove_')[1];
-    var size = $(this).data('size');
-    var url = '/bag/remove/${itemId}';
-    var data = {'csrfmiddlewaretoken': csrToken, 'size': size};
+    var size = $(this).data('product_size');
+    var url = `/bag/remove/${itemId}/`;
+    var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
     $.post(url, data)
         .done(function() {
