@@ -103,7 +103,20 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-link {
     cursor: pointer;
-} 
+}
+.message-container {
+    position: fixed;
+    top: 70px;
+    right: 12px;
+    z-index: 99999999999;
+}
+.message-container {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
 
 /* footer */
 
