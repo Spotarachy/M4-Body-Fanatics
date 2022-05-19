@@ -25,6 +25,38 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Please fill out the form complete!</p>
+                <form action="{% url 'checkout' %}" method="POST" id="payment-form">
+                    {% csrf_token %}
+                    <fieldset class="rounded px-3 md-5">
+                        <legend class="fieldset-label small text-black  px-2 w-auto">Details</legend>
+                        {{ order_from.full_name | as_crisp_field }}
+                        {{ order_from.email | as_crisp_field }}
+                    </fieldset>
+
+                    <fieldset class="rounded px-3 mb-5">
+                        <fieldset class="rounded px-3 md-5">
+                            <legend class="fieldset-label small text-black  px-2 w-auto">Delivery</legend>
+                            {{ order_from.phone_number | as_crisp_field }}
+                            {{ order_from.country | as_crisp_field }}
+                            {{ order_from.town_or_city | as_crisp_field }}
+                            {{ order_from.street_address | as_crisp_field }}
+                            <div class="form-check form-check-inline float-right mr-0">
+                                {% if user.is_authenticated %}
+                                <label class="from-check-label" for="id-save-info">Save this Delivery info to your profile</label>
+
+                                <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info">
+                                {% else %}
+                                <label class="from-check-label" for="id-save-info">
+                                    <a class="text-info" href="{% url 'account_signup' %}">Create an account </a>
+                                    or 
+                                    <a class="text-info" href="{% url 'account_login' %}">login</a>To save this information
+                                </label>
+                                {% endif %}
+                            </div>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset class="px-3"></fieldset>
+                </form> 
             </div>
         </div>
 {% endblock %}
