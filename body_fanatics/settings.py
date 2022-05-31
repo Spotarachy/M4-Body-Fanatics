@@ -84,8 +84,8 @@ TEMPLATES = [
                 'bag.contexts.bag_contents',
             ],
             'builtins':[
-                'crispy_froms.templatetages.crispy_forms_tags',
-                'crispy_froms.templatetages.crispy_forms_field',
+                # 'crispy_froms.templatetages.crispy_forms_tags',
+                # 'crispy_froms.templatetages.crispy_forms_field',
             ]
         },
     },
