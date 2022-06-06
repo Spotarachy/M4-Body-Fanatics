@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from django.conf import setting
+from django.conf import settings
 
 from .forms import OrderForm
 from .models import Order, OrderLineItem
@@ -19,7 +19,7 @@ def checkout(request):
 
         form_data = {
             'full_name': request.POST['full_name'],
-            'email': request.POST['eamil'],
+            'email': request.POST['email'],
             'phone_number': request.POST['phone_number'],
             'country': request.POST['country'],
             'postcode': request.POST['postcode'],
@@ -81,7 +81,7 @@ def checkout(request):
         order_form = OrderForm()
 
     if not stripe_public_key:
-        messages.warning(request, 'Stripe public key in missing. \ Set it in your environment?')
+        messages.warning(request, 'Stripe public key in missing.\ Set it in your environment?')
 
     order_form = OrderForm()
     template = 'checkout/checkout.html'
@@ -100,14 +100,16 @@ def checkout_success(request, order_number):
     """
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
-    messages.success(request, f 'Order successfully processed! \ Your order number is {order_number}. A confirmation \ email will be sent to {order.email}.')
+    messages.success(request, f'Order successfully processed! \
+        Your order number is {order_number}. A confirmation \
+        email will be sent to {order.email}.')
 
     if 'bag' in request.session:
         del request.session['bag']
-    
+
     template = 'checkout/checkout_success.html'
     context = {
-        'order' : order 
+        'order': order,
     }
 
     return render(request, template, context)

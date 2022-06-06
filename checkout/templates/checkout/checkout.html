@@ -78,8 +78,8 @@
                     {% csrf_token %}
                     <fieldset class="rounded px-3 md-5">
                         <legend class="fieldset-label small text-black  px-2 w-auto">Details</legend>
-                        {{ order_from.full_name | as_crisp_field }}
-                        {{ order_from.email | as_crisp_field }}
+                        {{ order_form.full_name | as_crispy_field }}
+                        {{ order_form.email | as_crispy_field }}
                     </fieldset>
 
                     <fieldset class="rounded px-3 mb-5">
