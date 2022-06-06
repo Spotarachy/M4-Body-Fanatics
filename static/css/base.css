@@ -43,8 +43,8 @@ body {
 @keyframes pulsate {
     0%{
         box-shadow:
-        0 0 25px rgb(243, 255, 240)
-        0 0 50px #5ddcff;
+        0 0 25px #ff00cc,
+        0 0 50px #333399;
     }
 }
 
@@ -87,8 +87,8 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: rgb(243, 255, 240) !important;
-    color: #5ddcff !important;
+    background: #ff00cc !important;
+    color: #333399 !important;
 }
 
 .btt-button {
