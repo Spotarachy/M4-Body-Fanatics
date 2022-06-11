@@ -32,27 +32,29 @@ class StripeWH_Handler:
 
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        grand_total = round(intent.data.charges[0].amount / 100, 2)
+        grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         # Clean data the shipping details
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
+
         order_exists = False
         attempt = 1
         while attempt <= 5:
             try:
                 order = Order.objects.get(
-                    full_name__iexact=shipping_details.name,
-                    email__iexact=shipping_details.email,
+                   full_name__iexact=shipping_details.name,
+                    email__iexact=billing_details.email,
                     phone_number__iexact=shipping_details.phone,
-                    country__iexact=shipping_details.country,
-                    postcode__iexact=shipping_details.postal_code,
-                    town_or_city__iexact=shipping_details.city,
-                    street_address1__iexact=shipping_details.line1,
-                    street_address2__iexact=shipping_details.line2,
-                    county__iexact=shipping_details.state,
+                    country__iexact=shipping_details.address.country,
+                    postcode__iexact=shipping_details.address.postal_code,
+                    town_or_city__iexact=shipping_details.address.city,
+                    street_address1__iexact=shipping_details.address.line1,
+                    street_address2__iexact=shipping_details.address.line2,
+                    county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
+                    original_bag=bag,
                     stripe_pid=pid,
                 )
                 order_exists = True
@@ -68,52 +70,47 @@ class StripeWH_Handler:
             try:
                 order = Order.objects.create(
                     full_name=shipping_details.name,
-                    email=shipping_details.email,
+                    email=billing_details.email,
                     phone_number=shipping_details.phone,
-                    country=shipping_details.country,
-                    postcode=shipping_details.postal_code,
-                    town_or_city=shipping_details.city,
-                    street_address1=shipping_details.line1,
-                    street_address2=shipping_details.line2,
-                    county=shipping_details.state,
-                    grand_total=grand_total,
+                    country=shipping_details.address.country,
+                    postcode=shipping_details.address.postal_code,
+                    town_or_city=shipping_details.address.city,
+                    street_address1=shipping_details.address.line1,
+                    street_address2=shipping_details.address.line2,
+                    county=shipping_details.address.state,
+                    original_bag=bag,
                     stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(bag).items():
-                        product = Product.objects.get(id=item_id)
-                        if isinstance(item_data, int):
+                    product = Product.objects.get(id=item_id)
+                    if isinstance(item_data, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=item_data,
+                        )
+                        order_line_item.save()
+                    else:
+                        for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
-                                quantity=item_data,
+                                quantity=quantity,
+                                product_size=size,
                             )
                             order_line_item.save()
-                        else:
-                            for size, quantity in item_data['items_by_size'].items():
-                                order_line_item = OrderLineItem(
-                                    order=order,
-                                    product=product,
-                                    quantity=quantity,
-                                    product_size=size,
-                                )
-                                order_line_item.save()
-                except Exception as e:
-                    if order:
-                        order.delete()
-                    return HttpResponse(
-                        content=f'Webhook received: {event["type"]} | ERROR: {e}',status=500)
-
+            except Exception as e:
+                if order:
+                    order.delete()
+                return HttpResponse(
+                    content=f'Webhook received: {event["type"]} | ERROR: {e}',status=500)
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
-        
-    # return HttpResponse(
-    #     content=f'Webhook received: {event["type"]}',
-    #     status=200)
 
     def handle_payment_intent_failed(self, event):
         """ 
-        Handle a payment_intent_failed webhook event
+        Handle a payment_intent.payment_failed webhook form Stripe
         """
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',

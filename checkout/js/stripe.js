@@ -27,7 +27,7 @@ var card = elements.create('card', {style: style});
 card.mount('#card-element');
 
 // realtime card element to check for errors
-card.addEventListener('change', function (event){
+card.addEventListener('change', function (event) {
     var errorDiv = document.getElementById('card-errors');
     if (event.error) {
         var html =`
@@ -35,7 +35,7 @@ card.addEventListener('change', function (event){
             <i class="fas fa-times"></i>
             </span>
             <span>${event.error.message}</span>
-        `
+        `;
         $(errorDiv).html(html);
     } else {
         errorDiv.textContent = '';
@@ -48,7 +48,7 @@ var form = document.getElementById('payment-form');
 
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
-    card.update({'disabled': true});
+    card.update({ 'disabled': true });
     $('#submit-button').attr('disabled', true);
     $('#payment-from').fadeToggle(100);
     $('#loading-overlay').fadeToggle(100);
@@ -91,7 +91,7 @@ form.addEventListener('submit', function(ev) {
                     postal_code: $.trim(form.postcode.value),
                     state: $.trim(form.full_name.value),
                     }
-                }
+                },
         }).then(function(result) {
             if (result.error) {
                 var errorDiv = document.getElementById('card-errors');

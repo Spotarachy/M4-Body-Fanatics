@@ -1,4 +1,4 @@
-![CI logo](/media/images/My%20logo/IMG_8940.jpg)
+![CI logo](/media/My%20logo/IMG_8940.jpg)
 
 Welcome Body Fanatics
 **,June 20 2022**
