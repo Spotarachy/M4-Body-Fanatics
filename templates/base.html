@@ -94,7 +94,7 @@
                                 {% if request.user.is_superuser %}
                                     <a href="" class="dropdown-item">Product Management</a>
                                 {% endif %}
-                                <a href="" class="dropdown-item">My Profile</a>
+                                <a href="{% 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                                 <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
@@ -135,13 +135,6 @@
         </div>   -->
       </nav>
   </header>
-  
-  <footer class="icon-wrapper">
-         <i class="ri-instagram-line icon"></i>
-         <i class="ri-facebook-circle-line icon"></i>
-         <i class="ri-whatsapp-line icon"></i>
-        </div>
-    </footer>
    
     {% if messages %}
         <div class="message-container">
