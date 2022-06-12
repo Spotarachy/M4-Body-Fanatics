@@ -1,9 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 
 def team(request):
-    """thiswill show the view for the index, (Home) page"""
-    
+    """
+    Display user's profiles
+    """
+
     return render(request, 'team/team.html')
+    # template = 'profiles/profile.html'
+    context = {}
+
+    return render(request, )
