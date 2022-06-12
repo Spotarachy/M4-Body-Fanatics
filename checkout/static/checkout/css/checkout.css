@@ -41,6 +41,17 @@
     border: 1px solid #555;
 }
 
+
+select,
+select option {
+  color: #000000;
+}
+
+select:invalid,
+select option[valid=""] {
+  color: #aab7c4 !important;
+}
+
 /* Spinning loading animation */
 .loading-overlay {
   display: none;
