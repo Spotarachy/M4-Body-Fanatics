@@ -1,0 +1,22 @@
+Hello {{ order.full_name }}!
+
+This is Confirmation of your order at BodyFanatics Co. Your order information is below:
+
+Order Number: {{order.order_number }}
+Order Date: {{ order.order }}
+
+Order Total: {{ order.date }}
+Delivery: ${{ order.delivery }}
+Grand Total: ${{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We've got your phone Number on file as {{ order.phone_number}}.
+
+if you have any questions, feel free to contact us {{ contact_email }}.
+
+Thank you for your order!
+
+Sincerely,
+
+BodyFanatics Co.
