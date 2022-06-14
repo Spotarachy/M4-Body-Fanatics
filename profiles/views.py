@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 
 from .models import UserProfile
-from .forms import UserProfileFrom
+from .forms import UserProfileForm
 
 from checkout.models import Order
 
@@ -16,7 +16,7 @@ def profile(request):
         form = UserProfileFrom(request.POST, instance=profile)
         if form.is_valid():
             if form.save():
-            messages.success(request, 'Profile updated successfully')
+                messages.success(request, 'Profile updated successfully')
 
     form = UserProfileFrom(isinstance=profile)
     orders = profile.orders.all()
