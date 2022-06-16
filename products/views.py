@@ -5,6 +5,8 @@ from django.db.models.functions import Lower
 
 
 from .models import Product, Category
+from .forms import ProductForm
+
 
 def all_products(request):
     """This view will show our products page & it will include both the search &sorting """
@@ -58,7 +60,7 @@ def all_products(request):
 
 def products_detail(request, product_id):
     """This view will get specific product information """
-    print(request)
+    # print(request)
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
@@ -66,3 +68,12 @@ def products_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+def asd_product(request):
+    form = ProductForm()
+    tempate = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
