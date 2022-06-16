@@ -35,7 +35,12 @@
                        </thead>
                 {% for item in bag_items %}
                             <tr>
-                                <td class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                <td class="p-3 w-25">
+                                    {% if item.product.image %}
+                                    <img class="img-fluid rounded"src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                    {% else %}
+                                    <img class="img-fluid rounded"src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                                    {% endif %}
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
@@ -58,9 +63,9 @@
                                     </button>
                                 </div>
                                     <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
-                                    <div class="input-group-append">
-                                        <button class="increment-qty btn btn-sm btn-black rounded-0" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
-                                        <span>
+                                                    <div class="input-group-append">
+                                                <button class="increment-qty btn btn-sm btn-black rounded-0" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                            <span>
                                         <i class="fas fa-plus fa-sm"></i>
                                         </span>
                                     </button>
@@ -77,7 +82,7 @@
                             <td class="py-3">
                                 <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </td>
-                            </tr>
+                        </tr>
                 {% endfor %}
                 <tr>
                     <td colspan="5" class="pt-5 text-right">

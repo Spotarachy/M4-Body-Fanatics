@@ -59,7 +59,10 @@ def all_products(request):
     return render(request, 'products/products.html', context)
 
 def products_detail(request, product_id):
-    """This view will get specific product information """
+    """
+    This view will get specific product information
+    """
+
     # print(request)
     product = get_object_or_404(Product, pk=product_id)
 
@@ -69,8 +72,23 @@ def products_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
-def asd_product(request):
-    form = ProductForm()
+
+def add_product(request):
+    """
+    Add product to the store
+    """
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request,'Successfully added product!')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+        
     tempate = 'products/add_product.html'
     context = {
         'form': form,

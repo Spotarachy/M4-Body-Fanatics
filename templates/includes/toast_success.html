@@ -6,7 +6,7 @@
     <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
     </button>
     </div>
-    <div class="text-body bg-white">
+    <div class="toast-body bg-white">
         <div class="row">
             <div class="col">
                 {{ message }}
@@ -14,12 +14,16 @@
             </div>
         </div>
         {% if grand_total and not on_profile_page %}
-        <p class="logo-font bg-white test-black py-1">Your Bag({{ product_count }})</p>
-        <div class="bag-wrapper">
+        <p class="logo-font bg-white text-black py-1">Your Bag({{ product_count }})</p>
+        <div class="bag-notification_wrapper">
         {% for item in bag_items %}
         <div class="row">
             <div class="col-3 my-1">
-                <img class="w-100"src="{{. item.product.image.url }}">
+                {% if item.product.image %}
+                <img class="w-100"src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                {% else %}
+                <img class="w-100"src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                {% endif %}
             </div>
             <div class="col-9">
                 <p class="my-0"><strong>{{ item.product.name }}</strong></p>
