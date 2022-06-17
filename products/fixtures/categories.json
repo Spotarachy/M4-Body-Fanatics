@@ -18,5 +18,4 @@
     {"pk":9,"model": "products.category", "fields": {"name": "trainers", "friendly_name": "Trainers"}},
 
     {"pk":10,"model": "products.category", "fields": {"name": "card", "friendly_name": "Card"}}
-
 ]

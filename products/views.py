@@ -43,26 +43,22 @@ def all_products(request):
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
-    # name_descending
+   
     current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
         'search_term': query,
         'current_categories': categories,
-        'name_descending': current_sorting,
-        # name_descending,
+        'name_descending': current_sorting,   
     }
-    # will have to fix it here all  /\
-
+    
     return render(request, 'products/products.html', context)
 
 def products_detail(request, product_id):
     """
     This view will get specific product information
     """
-
-    # print(request)
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
