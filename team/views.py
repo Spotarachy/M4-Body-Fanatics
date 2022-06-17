@@ -6,8 +6,6 @@ def team(request):
     Display user's profiles
     """
 
-    return render(request, 'team/team.html')
+    return render(request, 'team.html')
     # template = 'profiles/profile.html'
     context = {}
-
-    return render(request, )
