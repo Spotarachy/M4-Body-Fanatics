@@ -1,0 +1,1 @@
+web: gunicorn body_fanatics.wsgi:gitapplication
