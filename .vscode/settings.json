@@ -33,6 +33,7 @@
       "Bulma",
       "checkout",
       "colour",
+      "csrfmiddlewaretoken",
       "elina",
       "eventyret",
       "forloop",
