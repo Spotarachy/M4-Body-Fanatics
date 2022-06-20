@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4_#q_ttmca+1a%f^m5w(2*v2x+dqw2=ce7i&+idx16kk#(5o+z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['m-four-body-fanatics.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -118,14 +118,14 @@ ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-WSGI_APPLICATION = 'body_fanatics.wsgi.application'
+WSGI_APPLICATION = 'Body_fanatics.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 if 'DATABASE' in os.environ:
-    DATABAES = {
+    DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 else:
