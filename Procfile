@@ -1,1 +1,1 @@
-web: gunicorn body_fanatics.wsgi:gitapplication
+web: gunicorn body_fanatics.wsgi:application
