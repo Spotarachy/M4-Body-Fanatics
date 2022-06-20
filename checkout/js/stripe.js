@@ -54,7 +54,7 @@ form.addEventListener('submit', function(ev) {
     $('#loading-overlay').fadeToggle(100);
 
     var saveInfo = Boolean($('#id-save-info').attr('checked'));
-    from using {% csrf_token %} in the from
+    // from using {% csrf_token %} in the from
     var csrfToken = $('input[name="csrfmiddlewaretoken"]').val();
     var postcode = {
     'csrfmiddlewaretoken': csrfToken,
