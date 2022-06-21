@@ -70,15 +70,79 @@ This website was made as the name's suggests for real fanatics when it comes to 
 
 5.[Developmnet](#Developmnet)
 
-    * Github
-
     * Horoku
+
+    * Github
 
     * Mongo DB
 
    * [Credit](#Credit)
    * [Acknowledgements](#Acknowledgement)
 
+
+
+
+
+# UX - User experience
+
+We want to give her use of the place where they can come and feel comfortable, here and `Body Fanatics` we aim to have easily viewed purchases in shopping cart to avoid overspending
+
+Give them a place where easily register in their account or login or recover their passwords, in case they forget it 
+We aim to have a fully functional in store that receive emails and confirmations of the registration of their account,
+And make sure each user has a personalise profile within them cells can become a seller on our website.
+
+
+---
+
+
+# MVC framework
+
+![Mockup](/media/framework/Screenshot%202022-03-23%20at%204.11.53%20PM.png)
+
+## Mobile app
+
+This is an example of the email and password and login page on the mobile app easily downloaded and accessible when will available
+
+
+## Layout of website
+
+![Mockup](/media/framework/Screenshot%202022-03-23%20at%204.39.40%20PM.png)
+
+
+From the layout of the website shoppers will be easily views of the list of products as individual products & thire details, these are quickly identified and items specified, and offers are clearly sense of direction through a drop-down menu for ease of use.
+
+
+---
+
+# Authentication
+This will be done into steps to differentiate our customers between our sellers will be able to add their own products and sign users will be able to shop are parts,
+
+## Superusers
+
+* As a superuser you'll be able to edit add or delete items from the store and become a seller of your own products on the body fanatics website this is done with the admin on location of the shop was super users can be registered by our team, they will have full control to edit there products add new items to the shop or change the 
+
+## Side uses
+* excite user can easily register for an account easy login easily recover their passwords in case of misuse and have a personaliseuse a page where there they can see a list of there pass purchases,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## How to Deploy 
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
@@ -96,7 +160,6 @@ Another blue button should appear to click: _Open Browser_.
 
 In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
 1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
 2. Scroll down to the *API Key* and click *Reveal*
@@ -104,7 +167,6 @@ To log into the Heroku toolbelt CLI:
 4. In Gitpod, from the terminal, run `heroku_config`
 5. Paste in your API key when asked
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
 ------
 
@@ -134,44 +196,10 @@ We continually tweak and adjust this template to help give you the best experien
 
 
 
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
 ```
 pkill uptime.sh
 rm .vscode/uptime.sh
 ```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
 ---
 
 '''
