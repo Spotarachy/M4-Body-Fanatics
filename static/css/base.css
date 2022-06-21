@@ -10,6 +10,9 @@ body {
     color: #555;
     font-family: 'Lato';
 }
+navbar-nav {
+    margin-bottom: 1px;
+}
 
 /* from Bulma */
 .icon {

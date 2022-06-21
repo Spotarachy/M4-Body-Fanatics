@@ -1,5 +1,8 @@
 ![CI logo](/media/My%20logo/IMG_8940.jpg)
 
+https://m-four-body-fanatics.herokuapp.com/
+
+
 Welcome Body Fanatics
 **,June 20 2022**
 
@@ -35,10 +38,10 @@ This website was made as the name's suggests for real fanatics when it comes to 
   * [Typography](#typography)
 
   * [Images](#images)
-    * [Pexels.com](#Pexels)
-    * [AliExpress.com](#aliExpress)
-    * [Storenvy.com](#storenvy.com)
-    * [VectorStock.com](#font-awesome)
+    * [Pexels](#Pexels)
+    * [AliExpress](#aliExpress)
+    * [Storenvy](#storenvy)
+    
 
   * [Icons](#icons)
     * [Font Awesome ](#font-awesome)
@@ -67,7 +70,7 @@ This website was made as the name's suggests for real fanatics when it comes to 
     * [Schema](#schema)
     * [Version control](#version)
 
-5.[Developmnet](#Developmnet)
+5.[Deployment](#Deployment)
 
     * Horoku
 
@@ -90,11 +93,21 @@ Give them a place where easily register in their account or login or recover the
 We aim to have a fully functional in store that receive emails and confirmations of the registration of their account,
 And make sure each user has a personalise profile within them cells can become a seller on our website.
 
+## Project Goals
+
+Here anybody fanatics, we were outside firstly to be able to view and navigate through the website making it easy to purchase see product list have individual product details quickly identify clearance special offers meal plans in apparel,
+
+We want our visitors to be able to register the user account for a super user or regular user would like nothing more than the best for easily logging in validate their passwords have overall good user experience,
+
+We will give our customers the ability to store and search particular products become a super user to even become a seller on our website purchasing and check out automatically help them to have a better experience on how our site can benefit them,
+By using our admin manager in a store managers sources to different back in front in five minutes we would like to keep our customers safe from any threats by using confirmation emails and making sure that each customer must have a functional email and password to use our site.
+
+
 
 ---
 
 
-## MVC framework
+## Wire frames
 
 ![Mockup](/media/framework/Screenshot%202022-03-23%20at%204.11.53%20PM.png)
 
@@ -263,8 +276,12 @@ He has a full example taking by Ella:
 * images shows from simply shredded.com have been purchased by me where I bought a workout plan that I currently follow
 [Simply Shredded](https://simplyshredded.com/)
 
+### Storenvy
+* images shown in our apparels page have been sourced from [Storenvy](Storenvy.com) 
+for example:![alt](/media/a.jpg)
 
-* 
+### AliExpress
+* images show in apparel and fitness page where sourced from [AliExpress](AliExpress.com)
 
 
 ## ICONS 
@@ -276,9 +293,27 @@ All items provided came from across the websites such as bootstraps and font awe
 * Other icons were sourced from [Bootstrap](https://getbootstrap.com/docs/4.0/extend/icons/)
 
 ---
+# Features
+
+~~~
+Our features will be special as when a customer is updating their processes do I have spinning icons to notify him that every transaction performed, we will have certain automations, in the future with links to Facebook Instagram and Twitter,
+~~~
+
+## VALIDATORS 
+
+ These are validating websites that were used to validate my website properly.
+
+   * HTML Validator 
+   [HTML Validation](https://jsonformatter.org/html-validator)
+
+   * W3C Markup Validation Service:
+   [W3C Validation](https://validator.w3.org/#validate_by_input)
+
+   * Css Validation Service:
+   [CSS Validation](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 
-## How to Deploy 
+# Deployment
 
 To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
@@ -303,7 +338,14 @@ In Gitpod you have superuser security privileges by default. Therefore you do no
 4. In Gitpod, from the terminal, run `heroku_config`
 5. Paste in your API key when asked
 
+## Credit
+Give full credit for the photos to Pexels, for everyone who work so hard to take such a beautiful photos, to make this project reality.
 
+I like to also think and give credit to AliExpress for their apparel images that inspired me to make this website
+
+## Acknowledgements
+
+I would like to acknowledge my mentor Rachel Wallets and the slut community for helping me to get this far with my project, also Code Institute
 ------
 
 '''
