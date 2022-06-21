@@ -61,7 +61,6 @@ This website was made as the name's suggests for real fanatics when it comes to 
 4.[Data](#data)
 
   * [Application](#application)
-    * [CRUD](#crud)
     * [CodeBase](#codebase)
     * [TDD Approach](#tdd)
     * [Template Django](#template)
@@ -115,7 +114,14 @@ From the layout of the website shoppers will be easily views of the list of prod
 ---
 
 ## Authentication
-This will be done into steps to differentiate our customers between our sellers will be able to add their own products and sign users will be able to shop are parts,
+
+Using '''allauth''' confirmation emails will be sent back and forth between the user and our server system to ensure everything has been passed security, usually '''django.core''' mainframe all emails will be handled in the backend of the console,
+
+This will be done in steps to differentiate our customers between our sellers who will be able to add their own products, & Sign Users that will be able to shop our Products, either by using a username or email address, all this will insuring that email to verify your account is necessary and mandatory.
+
+In this way no user can answer to a site without having first using a real email so they will be asked to verify the email twice to create an account and it will be sent a confirmation email to their account enter their email address to make sure it is a working and functional email address.
+
+As an extra precaution a minimum number of letters is required to create a username no less than five letters in so that the system understands we will give a redirect login URL to get our customers back to the main page of Iam site which will automatically receive the information that is how we plan to authenticate.
 
 ### Superusers
 
@@ -169,13 +175,13 @@ Well we can monitor if a customer as a new product or delete a current product t
 * Returning visitor: have a personal account and be able to view my profile be able to access my personal account information, easily required  access to my account, verified my account system is working and securely stored in my past orders and change my address or payment system if I want to I need to.
 
 ~~~
-* can I see my shopping bag
-* can I increase the amount of my purchase
-* is there a different sizes available
-* can I find different trainers
-* deals or discount
-* is there a new arrivals
-* can I can I join a group lesson
+    * can I see my shopping bag
+    * can I increase the amount of my purchase
+    * is there a different sizes available
+    * can I find different trainers
+    * deals or discount
+    * is there a new arrivals
+    * can I can I join a group lesson
 ~~~
 
 These are some of the user experiences and stories we would like to fulfil for customers here `body fanatics`
@@ -183,19 +189,93 @@ These are some of the user experiences and stories we would like to fulfil for c
 
 ---
 
+## Database schema
+
+Using the '''django''' we make a front end user base any backend user based to interact with each other to handle the data, while he's sitting would be mostly use by Superusers it is also playing a role for our regular users or shoppers were super users has a fully functioning user admin panel we also won our general users to be able to create read an update their information, 
+
+as a superusers from the front or back in will be able to use a framework called CRUD, that stands for create read update and delete all files will be duplicated from the users front end plate and sent it back into storage in the admin using the '''django''' and '''Reroku''', by using the method of get or post request, we hope to handle all our clients needs to this process.
 
 
+  ### Functionality
+
+    * Create {An SQL INSERT statement adds one or more records to any single table in a relational database.}
+        ** 
+
+    * Read {The SQL SELECT statement returns a result set of records, from one or more table}
+
+    * Update {The SQL SELECT statement returns a result set of records, from one or more table}
+
+    * Delete {In the database structured query language (SQL), the DELETE statement removes one or more records from a table. A subset may be defined for deletion using a condition, otherwise all records are removed.[1] Some database management systems (DBMSs), like MySQL, allow deletion of rows from multiple tables with one DELETE statement (this is sometimes called multi-table DELETE).}
 
 
+---
+
+# Design
+
+We are going for a simple design of white and off-white makes it easier on the eyes of the customers we want to let our showcase of colours of products and meal plans with a showcase of our website and we do not want to take that away by having too much extra ordinary colours,
 
 
+## colours 
+
+chosen for the site Body fanatics have come from a website the website Colours:
+
+* Full colours graph:
+
+![alt](/media/framework/Screenshot%202022-03-23%20at%203.40.26%20PM.png)
 
 
+## TYPOGRAPHY 
+
+1. The main font that is going to be used is Open Sans,
+   Light 300 italic, this font is going be used throughout the whole website, this font came from Google fonts.
+
+   * Why Open Sans:
+      [Google fonts](https://fonts.google.com/specimen/Open+Sans#about)
+   
+   * Designed by: Matteson Typographics.
+      [Type Design & Consulting](https://mattesontypographics.com/)
+  
+
+2. The secondary fonts for (h2) that were used were: Arial Narrow Bold sans-serif, Font was generated straight from the CSS3 browser! 
+None can be provided..
+
+   * Why Arial Narrow Bold  sans-serif: 
+      were used to add symmetry to the website!
+
+      For Visual Example of Font:[Arial](https://www.cssfontstack.com/Arial-Narrow)
 
 
+3. The territory fonts for (h3) that were used are: Georgia, 'Times New Roman', Times, serif, Font was generated straight from the CSS3 browser! None can be provided..
+
+   * Why Georgia, 'Times New Roman', Times, serif:
+      was used to add a different feel to the headers!
+
+      For Visual Example of Font:[Georgia](https://www.cssfontstack.com/Georgia)
 
 
+## Images 
+will be Sourced from [Pexels](https://www.pexels.com/search/Tic%20tac%20toe/)
+Which is free to use to my personal account which I also give donations and display my own work.
+He has a full example taking by Ella:
 
+![alt](/media/background/ella1.jpeg)
+
+* images shows from simply shredded.com have been purchased by me where I bought a workout plan that I currently follow
+[Simply Shredded](https://simplyshredded.com/)
+
+
+* 
+
+
+## ICONS 
+
+All items provided came from across the websites such as bootstraps and font awesome.
+
+* Social Media were sourced from [Font Awesome](https://fontawesome.com) and [Google Fonts](https://fonts.google.com/icons)
+
+* Other icons were sourced from [Bootstrap](https://getbootstrap.com/docs/4.0/extend/icons/)
+
+---
 
 
 ## How to Deploy 
@@ -225,38 +305,6 @@ In Gitpod you have superuser security privileges by default. Therefore you do no
 
 
 ------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
----
 
 '''
 Thank you CodeInstitute for helping me become more than who I was meant to be.
