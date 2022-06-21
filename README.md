@@ -95,16 +95,16 @@ And make sure each user has a personalise profile within them cells can become a
 ---
 
 
-# MVC framework
+## MVC framework
 
 ![Mockup](/media/framework/Screenshot%202022-03-23%20at%204.11.53%20PM.png)
 
-## Mobile app
+### Mobile app
 
 This is an example of the email and password and login page on the mobile app easily downloaded and accessible when will available
 
 
-## Layout of website
+### Layout of website
 
 ![Mockup](/media/framework/Screenshot%202022-03-23%20at%204.39.40%20PM.png)
 
@@ -114,18 +114,74 @@ From the layout of the website shoppers will be easily views of the list of prod
 
 ---
 
-# Authentication
+## Authentication
 This will be done into steps to differentiate our customers between our sellers will be able to add their own products and sign users will be able to shop are parts,
 
-## Superusers
+### Superusers
 
-* As a superuser you'll be able to edit add or delete items from the store and become a seller of your own products on the body fanatics website this is done with the admin on location of the shop was super users can be registered by our team, they will have full control to edit there products add new items to the shop or change the 
-
-## Side uses
-* excite user can easily register for an account easy login easily recover their passwords in case of misuse and have a personaliseuse a page where there they can see a list of there pass purchases,
+* As a superuser you'll be able to edit add or delete items from the store and become a seller of your own products on the body fanatics website this is done with the admin on location of the shop was super users can be registered by our team, they will have full control to edit there products add new items to the shop or change the existing items such as prices, description, images, or update to existing product.
 
 
+### Side uses 
 
+* excite user can easily register for an account easy login easily recover their passwords in case of misuse and have a personalise use a page where there they can see a list of there pass purchases,
+
+
+---
+
+
+## E-commerce
+
+This section of the store will be handled by '''stripe''' payment system and link to our e-commerce store here customers will be able to check out and make purchases directly from their account, 
+It will be handled in the background, customers will receive confirmation emails with shipping and handling details, for each specific products and information from their past purchases will be displayed and also if they qualify for any discounts in shipping.
+
+
+---
+
+## Control-system
+
+Using '''Heroku''' will be able to log in and check how the site is doing to the backend of the site will be able to monitor as a super admin user can use the website admin to make sure the website is running smoothly,
+
+You'll be able to monitor the push notification  of are users are that are registered to the admin and simultaneously get all the account details that are stored.
+
+Well we can monitor if a customer as a new product or delete a current product this all will be registered to the terminal which again will be pushed to our server at Heroku
+
+
+---
+
+# User Stories
+
+* first visit: Have a very eye appealing look the first time users easily navigated all the information is clearly displayed and very customisable to their preferences with this we hope to have a first time user register for an account, and become a customer
+
+~~~
+    * How fast is the website loading.
+    * Is the website easy to understand.
+    * Does it have quick responses.
+    * How's the design.
+    * All the links should work.
+    * Easy to navigate.
+    * Not confusing.
+    * Simple. 
+    * Interactive.
+
+~~~
+
+* Returning visitor: have a personal account and be able to view my profile be able to access my personal account information, easily required  access to my account, verified my account system is working and securely stored in my past orders and change my address or payment system if I want to I need to.
+
+~~~
+* can I see my shopping bag
+* can I increase the amount of my purchase
+* is there a different sizes available
+* can I find different trainers
+* deals or discount
+* is there a new arrivals
+* can I can I join a group lesson
+~~~
+
+These are some of the user experiences and stories we would like to fulfil for customers here `body fanatics`
+
+
+---
 
 
 
