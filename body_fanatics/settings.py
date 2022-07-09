@@ -89,8 +89,8 @@ TEMPLATES = [
             ],
             # crispy_forms is giving an import error and neither I or my mentor or student care cancel this
             'builtins':[
-                # 'crispy_froms.templatetages.crispy_forms_tags',
-                # 'crispy_froms.templatetages.crispy_forms_field',
+                 'crispy_forms.templatetages.crispy_forms_tags',
+                 'crispy_forms.templatetages.crispy_forms_field',
             ]
         },
     },
